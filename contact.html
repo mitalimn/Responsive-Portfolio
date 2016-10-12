@@ -1,64 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Basic Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<meta charset="UTF-8">
+	<title>Contact | Mitali Naik</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<h1>Mitali Naik</h1>
-			<div class="links">
-			<table>
-				<tr><td><a href="index.html" >About</a></td>
-					<td><a href="portfolio.html" target="_blank">Portfolio</a></td>
-					<td><a href="contact.html" target="_blank">Contact</a></td>
-				</tr>
 
-			</table>
-			</div>
-		</header>
-	
-		<!--Main Body -->
-		<div class="nav">
-				<div class="article">
-				<h3>Contact</h3>
-				<form method="POST" action="http://gmail.com" >
-				<table>
-  				<tr>
-    			<td>Your name</td></tr>
-    			<tr><td>
-      			<input id="name" type="text" name="name" size="20" value="FirstName LastName">
-    			</td></tr>
-  				
-  				<tr>
-   			 	<td>Your E-mail address</td></tr>
-    			<tr>
-    			<td><input id="email" type="email" name="email" size="25" value="example@gmail.com"></td>
-  				</tr>
-  				<tr>
-  				<td>Message</td></tr>
-  				<tr><td><textarea rows="4" cols="58"></textarea></td>
-  				</tr>
-  				<tr><td><input id="submit" type="submit" value="Submit" name="B1"></td></tr>
-			</table>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Mitali Naik</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Mitali Naik" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="abc@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit">
 			</form>
-		</div>
-		<!-- side bar -->
-		<div class="aside">
-		<h3>Connect with Me </h3>
-			<div>
-			<table id="connect">
-				<tr>
-					<td><a href="https://github.com/" target="_blank"><img src="../assets/images/github.png" alt="Github"></a></td>
-					<td><a href="https://www.linkedin.com/" target="_blank"><img src="./assets/images/linkedin.png" alt="Linkedin"></a></td>
-					<td><a href="http://stackoverflow.com/" target="_blank"><img src="./assets/images/stackoverflow.png" alt="StackOverflow"></a></td>
-				</tr>
-			</table>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+				<img src="assets/images/github.png" class="social" alt="Github">
+				<img src="assets/images/linkedin.png" class="social" alt="LinkedIn">
+				<img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow">
 			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Mitali Naik
 		</div>
-		</div>
-		<footer class="footerPart"> &copy; Copyright 2016 Mitali Naik</footer>
-	</div><!-- close div -wrapper -->
-	</body>
+	</footer>
+</body>
 </html>

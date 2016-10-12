@@ -1,60 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Basic Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<meta charset="UTF-8">
+	<title>Portfolio | Mitali Naik</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<h1>Mitali Naik</h1>
-			<div class="links">
-			<table>
-				<tr><td><a href="index.html" >About</a></td>
-					<td><a href="portfolio.html" target="_blank">Portfolio</a></td>
-					<td><a href="contact.html" target="_blank">Contact</a></td>
-				</tr>
 
-			</table>
-			</div>
-		</header>
-	
-		<!--Main Body -->
-		<div class="nav" style="height: 720px">
-			<div class="article" style="height:700 px;">
-				<h3>Portfolio</h3>
-				<div class="image1">
-					<div class="label1">Hangman</div>
-				</div>
-				<div class="image2">
-					<div class="label2">RPG Game</div>
-				</div>
-				<div class="image3">
-					<div class="label3">Trivia Game</div>
-				</div>
-				<div class="image4">
-					<div class="label4">Rutgers Info Widget</div>
-				</div>
-				<div class="image5">
-					<div class="label5">Rock Paper Scissors</div>
-				</div>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Mitali Naik</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
 
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Portfolio</h1>
+
+			<div class="work">
+				<img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
+
+				<h3>Hangman</h3>
 			</div>
-			<!-- sidebar -->
-		<div class="aside">
-		<h3>Connect with Me </h3>
-			<div>
-			<table id="connect">
-				<tr>
-					<td><a href="https://github.com/" target="_blank"><img src="./assets/images/github.png" alt="Github"></a></td>
-					<td><a href="https://www.linkedin.com/" target="_blank"><img src="./assets/images/linkedin.png" alt="Linkedin"></a></td>
-					<td><a href="http://stackoverflow.com/" target="_blank"><img src="./assets/images/stackoverflow.png" alt="StackOverflow"></a></td>
-				</tr>
-			</table>
+			<div class="work">
+				<img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+
+				<h3>RPG Game</h3>
 			</div>
+			<div class="work">
+				<img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+
+				<h3>Trivia Game</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+
+				<h3>Rutgers Info Widget</h3>
+			</div>
+			<div class="work">
+				<img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+
+				<h3>Rock Paper Scissors</h3>
+			</div>
+
+		</section>
+
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+
+				<img src="assets/images/github.png" class="social" alt="Github">
+				<img src="assets/images/linkedin.png" class="social" alt="LinkedIn">
+				<img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow">
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Mitali Naik
 		</div>
-		</div>
-		<footer class="footerPart"> &copy; Copyright 2016 Mitali Naik</footer>
-	</div><!-- close div -wrapper -->
-	</body>
+	</footer>
+</body>
 </html>
